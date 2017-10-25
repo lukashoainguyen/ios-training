@@ -13,11 +13,11 @@
 }
 
 - (NSString *)name {
-    return nil;
+    return _name;
 }
 
 - (void)setName:(NSString *)name {
-
+    _name = name;
 }
 
 - (void)orderAlbum:(Album *)album quantity:(NSUInteger)quantity {

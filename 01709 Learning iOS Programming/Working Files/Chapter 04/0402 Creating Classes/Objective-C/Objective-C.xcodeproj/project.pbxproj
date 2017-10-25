@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63136CCA1FA03F4F00CEAAFE /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 63136CC91FA03F4F00CEAAFE /* Artist.m */; };
+		63136CCD1FA03F5F00CEAAFE /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 63136CCC1FA03F5F00CEAAFE /* Album.m */; };
 		F98897E7154CE16800DFF107 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98897E6154CE16800DFF107 /* Foundation.framework */; };
 		F98897EA154CE16800DFF107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F98897E9154CE16800DFF107 /* main.m */; };
 		F98897F6154CE1B700DFF107 /* MainApp.m in Sources */ = {isa = PBXBuildFile; fileRef = F98897F5154CE1B700DFF107 /* MainApp.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		63136CC81FA03F4F00CEAAFE /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		63136CC91FA03F4F00CEAAFE /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		63136CCB1FA03F5F00CEAAFE /* Album.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		63136CCC1FA03F5F00CEAAFE /* Album.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		F98897E2154CE16800DFF107 /* Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98897E6154CE16800DFF107 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F98897E9154CE16800DFF107 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +81,10 @@
 			children = (
 				F98897F5154CE1B700DFF107 /* MainApp.m */,
 				F98897EB154CE16800DFF107 /* Supporting Files */,
+				63136CC81FA03F4F00CEAAFE /* Artist.h */,
+				63136CC91FA03F4F00CEAAFE /* Artist.m */,
+				63136CCB1FA03F5F00CEAAFE /* Album.h */,
+				63136CCC1FA03F5F00CEAAFE /* Album.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -140,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98897EA154CE16800DFF107 /* main.m in Sources */,
+				63136CCA1FA03F4F00CEAAFE /* Artist.m in Sources */,
 				F98897F6154CE1B700DFF107 /* MainApp.m in Sources */,
+				63136CCD1FA03F5F00CEAAFE /* Album.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
