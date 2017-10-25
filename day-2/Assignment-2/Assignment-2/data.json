@@ -1,0 +1,50 @@
+[
+  {
+    "id": 100,
+    "userName": "Cherry Nguyen",
+    "avatar": "cherry.png",
+    "address": "366 Nguyen Trai, Q5",
+    "phoneNumber": "091233445566",
+    "email": "cherry@gmail.com",
+    "orderDetails": [
+      {
+        "itemId" :1,
+        "itemName" :"Zinnat 500mg",
+        "image" :"zinnat.png",
+        "amount": 20,
+        "type": "table"
+      },
+      {
+        "itemId" :2,
+        "itemName": "Xisat",
+        "image": "xisat.png",
+        "amount": 1,
+        "type": "bottle"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "userName": "David Ho",
+    "avatar": "david.png",
+    "address": "366 Tran Hung Dao,Q5",
+    "phoneNumber": "091277665544",
+    "email": "david@gmail.com",
+    "orderDetails": [
+      {
+        "itemId": 1,
+        "itemName": "Efferalgan 250mg",
+        "image": "efferalgan.png",
+        "amount": 10,
+        "type": "table"
+      },
+      {
+        "itemId": 2,
+        "itemName": "Xisat",
+        "image": "xisat.png",
+        "amount": 1,
+        "type": "bottle"
+      }
+    ]
+  }
+]
