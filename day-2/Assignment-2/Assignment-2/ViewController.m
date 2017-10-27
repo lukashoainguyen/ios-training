@@ -53,7 +53,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellId = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    cell.textLabel.text = [myData objectAtIndex:indexPath.row];
+    id keyValue = myData[indexPath.row];
+    cell.textLabel.text = keyValue[@"userName"];
+    cell.imageView.image = [UIImage imageNamed:keyValue[@"avatar"]];
     
     return cell;
 }
