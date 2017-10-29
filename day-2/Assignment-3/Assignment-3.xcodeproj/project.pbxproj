@@ -16,6 +16,7 @@
 		633DF1A51FA2E4500053E9B8 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633DF1A41FA2E4500053E9B8 /* FirstTableViewController.m */; };
 		633DF1A81FA2E5AB0053E9B8 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 633DF1A71FA2E5AB0053E9B8 /* MyTableViewCell.m */; };
 		633DF1AC1FA2EDA70053E9B8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 633DF1AB1FA2EDA70053E9B8 /* data.json */; };
+		7B6A4AE81FA36F8200639DF6 /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A4AE71FA36F8200639DF6 /* SubTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		633DF1A61FA2E5AB0053E9B8 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		633DF1A71FA2E5AB0053E9B8 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		633DF1AB1FA2EDA70053E9B8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		7B6A4AE61FA36F8200639DF6 /* SubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewCell.h; sourceTree = "<group>"; };
+		7B6A4AE71FA36F8200639DF6 /* SubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				633DF1A41FA2E4500053E9B8 /* FirstTableViewController.m */,
 				633DF1A61FA2E5AB0053E9B8 /* MyTableViewCell.h */,
 				633DF1A71FA2E5AB0053E9B8 /* MyTableViewCell.m */,
+				7B6A4AE61FA36F8200639DF6 /* SubTableViewCell.h */,
+				7B6A4AE71FA36F8200639DF6 /* SubTableViewCell.m */,
 			);
 			path = "Assignment-3";
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			files = (
 				633DF1A51FA2E4500053E9B8 /* FirstTableViewController.m in Sources */,
 				633DF1701FA2E2BD0053E9B8 /* ViewController.m in Sources */,
+				7B6A4AE81FA36F8200639DF6 /* SubTableViewCell.m in Sources */,
 				633DF17B1FA2E2BD0053E9B8 /* main.m in Sources */,
 				633DF16D1FA2E2BD0053E9B8 /* AppDelegate.m in Sources */,
 				633DF1A81FA2E5AB0053E9B8 /* MyTableViewCell.m in Sources */,
@@ -295,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B3ENMYZR4;
 				INFOPLIST_FILE = "Assignment-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasnguyen.Assignment-3";
@@ -308,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B3ENMYZR4;
 				INFOPLIST_FILE = "Assignment-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasnguyen.Assignment-3";

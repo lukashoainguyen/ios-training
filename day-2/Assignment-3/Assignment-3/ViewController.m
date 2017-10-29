@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SubTableViewCell.h"
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate> {
     
 }
@@ -39,10 +39,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    SubTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     id keyValue = myOrderDetail[indexPath.row];
-    cell.textLabel.text = keyValue[@"itemName"];
+    cell.subLabelOne.text = keyValue[@"itemName"];
+    cell.subImage.image = [UIImage imageNamed:keyValue[@"image"]];
+    NSString *unit;
+    if ([keyValue[@"type"] isEqualToString:@"table"]) {
+        unit = @"table(s)";
+    } else {
+        unit = @"bottle";
+    }
+    cell.subLabelTwo.text = [NSString stringWithFormat:@"%@ %@", keyValue[@"amount"], unit];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
 }
 
 
