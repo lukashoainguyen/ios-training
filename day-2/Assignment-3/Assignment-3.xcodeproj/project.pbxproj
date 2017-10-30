@@ -77,14 +77,14 @@
 				633DF1761FA2E2BD0053E9B8 /* LaunchScreen.storyboard */,
 				633DF1791FA2E2BD0053E9B8 /* Info.plist */,
 				633DF17A1FA2E2BD0053E9B8 /* main.m */,
-				633DF16E1FA2E2BD0053E9B8 /* ViewController.h */,
-				633DF16F1FA2E2BD0053E9B8 /* ViewController.m */,
-				633DF1A31FA2E4500053E9B8 /* FirstTableViewController.h */,
-				633DF1A41FA2E4500053E9B8 /* FirstTableViewController.m */,
-				633DF1A61FA2E5AB0053E9B8 /* MyTableViewCell.h */,
-				633DF1A71FA2E5AB0053E9B8 /* MyTableViewCell.m */,
 				7B6A4AE61FA36F8200639DF6 /* SubTableViewCell.h */,
 				7B6A4AE71FA36F8200639DF6 /* SubTableViewCell.m */,
+				633DF16E1FA2E2BD0053E9B8 /* ViewController.h */,
+				633DF16F1FA2E2BD0053E9B8 /* ViewController.m */,
+				633DF1A61FA2E5AB0053E9B8 /* MyTableViewCell.h */,
+				633DF1A71FA2E5AB0053E9B8 /* MyTableViewCell.m */,
+				633DF1A31FA2E4500053E9B8 /* FirstTableViewController.h */,
+				633DF1A41FA2E4500053E9B8 /* FirstTableViewController.m */,
 			);
 			path = "Assignment-3";
 			sourceTree = "<group>";
