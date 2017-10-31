@@ -20,7 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    myData = [self getJsonFile];
+//    myData = [self getJsonFile];
+    [self getJsonFile];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,11 +33,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSArray *)getJsonFile {
+- (void)getJsonFile {
+    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://jsonplaceholder.typicode.com/users/"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSArray *myArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+//        NSLog(@"Data: %@", myArray);
+        myData = myArray;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }]resume];
+}
+
+- (NSArray *)getJsonFromAPI {
     NSString *path = @"https://jsonplaceholder.typicode.com/users/";
     NSURL *url = [NSURL URLWithString:path];
-    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:NULL];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfURL:url];
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:NULL];
     return array;
 }
 

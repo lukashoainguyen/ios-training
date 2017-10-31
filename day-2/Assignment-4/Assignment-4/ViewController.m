@@ -16,7 +16,7 @@
 @end
 
 @implementation ViewController
-@synthesize userData, myArray, avatar, name, email, phone, infoBg, taskBg;
+@synthesize userData, myArray, avatar, name, email, phone, infoBg, taskBg, myTable;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +26,27 @@
     name.text = userData[@"name"];
     email.text = userData[@"email"];
     phone.text = userData[@"phone"];
-    myArray = [self getJsonFile];
+//    myArray = [self getJsonFile];
+    [self getJsonFromAPI];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)getJsonFromAPI {
+    NSString *path = @"https://jsonplaceholder.typicode.com/todos?userId=";
+    NSString *fullPath = [NSString stringWithFormat:@"%@%@", path, userData[@"id"]];
+    
+    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:fullPath] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSArray *apiArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        myArray = apiArray;
+//        NSLog(@"Data: %@", myArray);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.myTable reloadData];
+        });
+    }]resume];
 }
 
 - (NSArray *)getJsonFile {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__38-[MainTableViewController getJsonFile]_block_invoke:MainTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "myData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

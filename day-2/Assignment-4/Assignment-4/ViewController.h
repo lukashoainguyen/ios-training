@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
 @property NSDictionary *userData;
 @property NSArray *myArray;
 
@@ -18,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phone;
 @property (weak, nonatomic) IBOutlet UIView *infoBg;
 @property (weak, nonatomic) IBOutlet UIView *taskBg;
+@property (weak, nonatomic) IBOutlet UITableView *myTable;
 
 @end
 
